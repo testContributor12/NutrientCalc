@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="MainAll">
+      <section class="block1">
+        <div class="headBlock1">
+          <a class="tabMain">Find Foods</a>
+          <span class="moveUnderlineToLeft theUnderline"></span>
+          <a class="tabFavorites">Your Favorites</a>
+          <div class="favCounter"><span class="favCounterNumbers"></span></div>
+        </div>
+
+        <div id="findFoodsToShow" style="display:block">
+          <input
+            type="text"
+            class="search__field"
+            placeholder="Browse food..."
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Browse food...'"
+          />
+          <img src="spinner.svg" style="display:none" class="spinner" />
+          <div style="overflow-y: auto;" class="results__list"></div>
+          <div class="searchAgainErr" style.display="none">
+            Please enter a different food
+          </div>
+        </div>
+
+        <div id="favsToShow" style="display:none">
+          <div class="favoriesStore"></div>
+        </div>
+
+        <div class="currentChoosenFood">
+          <div class="addFoodCountainer"></div>
+
+          <div class="errorsContainer">
+            <div class="errDifferentFood">
+              Базата данни на USDA не предоставя цялата информация за продукта.
+            </div>
+            <div class="errNoFood">Please select a food</div>
+            <div class="errNoInput">The input must be filled</div>
+          </div>
+
+          <input value="100" type="number" class="numberCalculateInput" /><span
+            class="gr"
+            >grams</span
+          >
+          <button id="transportButton">Add Food</button>
+        </div>
+      </section>
+
+      <section class="block2">
+        <div class="headYourFoods">Your Foods</div>
+        <div class="descVal">
+          <span class="descBlock2">Description</span
+          ><span class="valBlock2">Value</span>
+        </div>
+        <div style="overflow-y: auto;" class="myFoodsOutput"></div>
+      </section>
+
+      <section class="block3">
+        <div class="headerNutrients">Nutrients</div>
+        <p>Calories:</p>
+        <span class="Kcal">0</span><span class="slash">/</span
+        ><span class="KcalMax enterBehaviour">3000</span><span>Kcal</span>
+        <br />
+        <div class="progress">
+          <div class="determinateKcal determinate"></div>
+        </div>
+        <p>Protein:</p>
+        <span class="Protein">0</span><span class="slash">/</span
+        ><span class="ProteinMax enterBehaviour">120</span><span>g</span> <br />
+        <div class="progress">
+          <div class="determinateProtein determinate"></div>
+        </div>
+        <p>Carbs:</p>
+        <span class="Carbs">0</span><span class="slash">/</span
+        ><span class="CarbsMax enterBehaviour">250</span><span> g</span> <br />
+        <div class="progress">
+          <div class="determinateCarbs determinate"></div>
+        </div>
+        <p>Fats:</p>
+        <span class="Fats">0</span><span class="slash">/</span
+        ><span class="FatsMax enterBehaviour">75</span><span>g</span> <br />
+        <div class="progress">
+          <div class="determinateFats determinate"></div>
+        </div>
+        <p>Calcium:</p>
+        <span class="Calcium">0</span><span class="slash">/</span
+        ><span class="CalciumMax enterBehaviour">1200</span><span>mg</span
+        ><br />
+        <div class="progress">
+          <div class="determinateCalcium determinate"></div>
+        </div>
+        <p>Sugars:</p>
+        <span class="Sugars">0</span><span class="slash">/</span
+        ><span class="SugarsMax enterBehaviour">20</span><span>g</span><br />
+        <div class="progress">
+          <div class="determinateSugars determinate"></div>
+        </div>
+        <p>Iron:</p>
+        <span class="Iron">0</span><span class="slash">/</span
+        ><span class="IronMax enterBehaviour">24</span><span>mg</span><br />
+        <div class="progress">
+          <div class="determinateIron determinate"></div>
+        </div>
+        <p>Sodium:</p>
+        <span class="Sodium">0</span><span class="slash">/</span
+        ><span class="SodiumMax enterBehaviour">2200</span><span>mg</span><br />
+        <div class="progress">
+          <div class="determinateSodium determinate"></div>
+        </div>
+        <p>VitaminC:</p>
+        <span class="VitaminC">0</span><span class="slash">/</span
+        ><span class="VitaminCMax">70</span><span>mg</span><br />
+        <div class="progress">
+          <div class="determinateVitaminC determinate"></div>
+        </div>
+        <p>Cholesterol:</p>
+        <span class="Cholesterol">0</span><span class="slash">/</span
+        ><span class="CholesterolMax">250</span><span>mg</span><br />
+        <div class="progress">
+          <div class="determinateCholesterol determinate"></div>
+        </div>
+        <i class="fas fa-edit"></i>
+
+        <div style="display:none" class="editDesc">
+          Изберете собствена крайна стойност
+        </div>
+      </section>
+    </section>
+
+    <script src="js/connectToAPI.js"></script>
+    <script src="js/mainFun.js"></script>
+    <script src="js/foodButtons.js"></script>
+    <script src="js/block1Function.js"></script>
+    <script src="js/block3EditProgress.js"></script>
+  </body>
+</html>

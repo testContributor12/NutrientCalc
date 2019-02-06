@@ -1,0 +1,102 @@
+.block2{
+  
+    .headYourFoods{
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: white;
+        height: 55.5px;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0 0 0;
+        margin: 0 auto;
+        color:rgba(211, 29, 35, 0.7);
+    }
+    .descVal{
+        margin-top:-0.9rem;
+        margin-bottom:0.7rem;
+        background-color: white;
+        span{
+            font-size: 1.2rem;
+            color:rgba(211, 29, 35, 0.7);
+            font-weight: bold;
+        }
+        .descBlock2{
+            margin-left:1rem;
+        }
+        .valBlock2{
+        margin-left:18rem;
+        }
+    }
+    .myFoodsOutput {
+        height: 30rem;
+       position: relative;
+        div {
+        margin-top:0.8rem;
+        padding: 0 1rem;
+        width: 24rem;
+        .fa-check{
+            cursor: pointer;
+            position: absolute;
+            right:9rem;
+            font-size:1.5rem;
+            color:rgb(132, 190, 23);
+            &:hover{
+      color:rgb(2, 209, 2);
+            }
+        }
+        .fa-pencil-alt{
+            cursor: pointer;
+            position: absolute;
+            right:9rem;
+            font-size:1.2rem;
+           
+        }
+        .edGr{
+            color:white;
+            position: absolute;
+            right:10.9rem;
+        }
+           span{
+            color:white;
+            position: absolute;
+            right:14.3rem;
+
+                }
+              &::after{
+                content: "";
+                margin-top:0.3rem;
+                display: block;
+                width: 150%;
+                height: 2px;
+                background-color:#26a69a;
+                margin-bottom:1.7rem;
+              }
+           
+            
+            li:nth-child(1) {
+                display: inline;
+                list-style: none;
+                color:white;
+             
+            }
+    
+            .fa-times {
+                cursor: pointer;
+                right:1.6rem;
+                position: absolute;
+                margin-left:0.5rem;
+                font-size:1.8rem;
+                color:rgb(29, 29, 29);
+            }
+    
+            .fa-heart {
+                cursor: pointer;
+                right:3.3rem;
+                position: absolute;
+                margin-left:0.5rem;
+                font-size:1.8rem;
+                color:red;
+            }
+        }
+    }
+}

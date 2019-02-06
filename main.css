@@ -1,0 +1,521 @@
+.block1 {
+  position: relative;
+}
+
+.block1 .favoriesStore div:nth-child(1) {
+  margin-top: 1rem;
+}
+
+.block1 .favoriesStore div {
+  padding: 0 2rem 0 1.2rem;
+  position: relative;
+}
+
+.block1 .favoriesStore div li {
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+}
+
+.block1 .favoriesStore div li:hover {
+  color: white;
+}
+
+.block1 .favoriesStore div li::after {
+  content: "";
+  margin-top: 0.3rem;
+  display: block;
+  width: 108%;
+  height: 2px;
+  background-color: #26a69a;
+  margin-bottom: 1.7rem;
+}
+
+.block1 .favoriesStore div .fa-times {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 10%;
+  right: 3%;
+}
+
+.block1 .favoriesStore div .fa-times:hover {
+  cursor: pointer;
+}
+
+.block1 .headBlock1 {
+  position: relative;
+  background-color: white;
+  height: 55.5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block1 .headBlock1 a {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: rgba(212, 104, 108, 0.7);
+}
+
+.block1 .headBlock1 a:nth-child(1) {
+  color: rgba(209, 7, 13, 0.7);
+}
+
+.block1 .headBlock1 a:hover {
+  color: rgba(209, 7, 13, 0.7);
+}
+
+.block1 .headBlock1 .favCounter {
+  top: 7%;
+  right: 2%;
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.block1 .headBlock1 .favCounter .favCounterNumbers {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.block1 .headBlock1 .moveUnderlineToLeft {
+  margin-top: 0.2rem;
+  display: block;
+  position: absolute;
+  left: 23%;
+  top: 2.8rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 37%;
+  border-radius: 60px;
+  height: 2px;
+  background-color: rgba(214, 87, 91, 0.7);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.block1 .headBlock1 .moveUnderlineToRight {
+  margin-top: 0.2rem;
+  display: block;
+  position: absolute;
+  left: 73%;
+  top: 2.8rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 45%;
+  border-radius: 60px;
+  height: 2px;
+  background-color: rgba(214, 87, 91, 0.7);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.block1 #findFoodsToShow .search__field {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  width: 92%;
+  font-size: 1.3rem;
+  height: 2rem;
+  color: black;
+  border: 1px solid #aaaaaa;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-top: 0 none;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  -webkit-transition: border-bottom;
+  transition: border-bottom;
+}
+
+.block1 #findFoodsToShow .search__field:focus {
+  border-bottom: 2px solid #2ba87f;
+}
+
+.block1 #findFoodsToShow .search__field::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.block1 #findFoodsToShow .search__field:-ms-input-placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.block1 #findFoodsToShow .search__field::-ms-input-placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.block1 #findFoodsToShow .search__field::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.block1 #findFoodsToShow .spinner {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.block1 #findFoodsToShow .results__list {
+  height: 23.2rem;
+}
+
+.block1 #findFoodsToShow .results__list li {
+  padding: 0.3rem 0 0.3rem 0.2rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.block1 #findFoodsToShow .results__list li:hover {
+  color: white;
+}
+
+.block1 #findFoodsToShow .results__list li:nth-child(even) {
+  background: #2ba87f;
+}
+
+.block1 #findFoodsToShow .results__list li:nth-child(odd) {
+  background: #377952;
+}
+
+.block1 .currentChoosenFood {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #5a9e4c;
+  height: 7rem;
+}
+
+.block1 .currentChoosenFood .addFoodCountainer li {
+  color: white;
+  padding: 0.6rem 1rem 0.4rem;
+  list-style: none;
+}
+
+.block1 .currentChoosenFood .numberCalculateInput {
+  font-size: 1.1rem;
+  text-align: center;
+  outline: none;
+  position: absolute;
+  left: 14rem;
+  top: 2.9rem;
+  width: 4rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-top: 0 none;
+  font-weight: bold;
+}
+
+.block1 .currentChoosenFood .gr {
+  position: absolute;
+  left: 18rem;
+  top: 3rem;
+  width: 4rem;
+}
+
+.block1 .currentChoosenFood #transportButton {
+  position: absolute;
+  height: 2.5rem;
+  left: 22rem;
+  top: 2.2rem;
+  width: 5rem;
+}
+
+.errNoFood,
+.errDifferentFood {
+  text-align: center;
+  color: red;
+  margin-top: 1rem;
+  display: none;
+  font-size: 1.1rem;
+}
+
+.errDifferentFood {
+  margin-top: 0.4rem;
+}
+
+.errNoInput {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.block3 {
+  position: relative;
+}
+
+.block3 .headerNutrients {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: white;
+  height: 55.5px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+  margin-bottom: 0.4rem;
+  color: rgba(211, 29, 35, 0.7);
+}
+
+.block3 p {
+  padding: 0.6rem 0 0 0.6rem;
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.block3 span {
+  font-size: 1.6rem;
+}
+
+.block3 .stringVal {
+  color: white;
+}
+
+.block3 .fa-edit {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top: 1%;
+  font-size: 2.8rem;
+}
+
+.block3 .fa-check {
+  color: #84be17;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top: 1%;
+  font-size: 2.8rem;
+}
+
+.block3 .slash {
+  font-size: 1.6rem;
+}
+
+.block3 .progress {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.block3 .progress .determinate {
+  background-color: #b4f10e;
+  border-radius: 20px;
+  height: 10px;
+  width: 0%;
+  margin: 0 0.6rem 0 0.6rem;
+}
+
+.editDesc {
+  font-weight: bold;
+  color: rgba(211, 29, 35, 0.7);
+  background-color: white;
+  position: absolute;
+  top: -10%;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+.block2 .headYourFoods {
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: white;
+  height: 55.5px;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+  margin: 0 auto;
+  color: rgba(211, 29, 35, 0.7);
+}
+
+.block2 .descVal {
+  margin-top: -0.9rem;
+  margin-bottom: 0.7rem;
+  background-color: white;
+}
+
+.block2 .descVal span {
+  font-size: 1.2rem;
+  color: rgba(211, 29, 35, 0.7);
+  font-weight: bold;
+}
+
+.block2 .descVal .descBlock2 {
+  margin-left: 1rem;
+}
+
+.block2 .descVal .valBlock2 {
+  margin-left: 18rem;
+}
+
+.block2 .myFoodsOutput {
+  height: 30rem;
+  position: relative;
+}
+
+.block2 .myFoodsOutput div {
+  margin-top: 0.8rem;
+  padding: 0 1rem;
+  width: 24rem;
+}
+
+.block2 .myFoodsOutput div .fa-check {
+  cursor: pointer;
+  position: absolute;
+  right: 9rem;
+  font-size: 1.5rem;
+  color: #84be17;
+}
+
+.block2 .myFoodsOutput div .fa-check:hover {
+  color: #02d102;
+}
+
+.block2 .myFoodsOutput div .fa-pencil-alt {
+  cursor: pointer;
+  position: absolute;
+  right: 9rem;
+  font-size: 1.2rem;
+}
+
+.block2 .myFoodsOutput div .edGr {
+  color: white;
+  position: absolute;
+  right: 10.9rem;
+}
+
+.block2 .myFoodsOutput div span {
+  color: white;
+  position: absolute;
+  right: 14.3rem;
+}
+
+.block2 .myFoodsOutput div::after {
+  content: "";
+  margin-top: 0.3rem;
+  display: block;
+  width: 150%;
+  height: 2px;
+  background-color: #26a69a;
+  margin-bottom: 1.7rem;
+}
+
+.block2 .myFoodsOutput div li:nth-child(1) {
+  display: inline;
+  list-style: none;
+  color: white;
+}
+
+.block2 .myFoodsOutput div .fa-times {
+  cursor: pointer;
+  right: 1.6rem;
+  position: absolute;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  color: #1d1d1d;
+}
+
+.block2 .myFoodsOutput div .fa-heart {
+  cursor: pointer;
+  right: 3.3rem;
+  position: absolute;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  color: red;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: url("annie-spratt-419269-unsplash.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.MainAll {
+  margin: 10rem 7rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 1870px) {
+  .MainAll {
+    margin: 10rem 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1870px) {
+  .MainAll {
+    margin: 10rem 2rem 0;
+  }
+}
+
+.MainAll .block1 {
+  height: 35rem;
+  width: 28rem;
+  background-color: rgba(128, 128, 128, 0.712);
+}
+
+.MainAll .block2 {
+  width: 42rem;
+  height: 35rem;
+  background-color: rgba(128, 128, 128, 0.712);
+}
+
+.MainAll .block3 {
+  width: 27rem;
+  height: 35rem;
+  background-color: rgba(128, 128, 128, 0.712);
+}
+
+.storeNutrientsForCalc {
+  display: none;
+}
+
+.searchAgainErr {
+  font-size: 2rem;
+  color: #e0e0e0;
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

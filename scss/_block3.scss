@@ -1,0 +1,68 @@
+.block3{
+    position: relative;
+    .headerNutrients{
+        font-weight: bold;
+        font-size: 2rem;
+        background-color: white;
+       
+        height: 55.5px;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0 0 0;
+        margin-bottom:0.4rem;
+        color:rgba(211, 29, 35, 0.7);
+    }
+    p{
+        padding: 0.6rem 0 0 0.6rem;
+        font-size:1.6rem;
+        display: inline;
+    }
+  
+    span{
+        font-size:1.6rem;
+    }
+    .stringVal{
+        color: white;
+    }
+    .fa-edit{
+      
+        cursor: pointer;
+        position: absolute;
+        right:10%;
+        top:1%;
+        font-size: 2.8rem;
+        
+    }
+    .fa-check{
+        color: rgb(132, 190, 23);
+        cursor: pointer;
+        position: absolute;
+        right:10%;
+        top: 1%;
+        font-size: 2.8rem;
+    }
+    .slash{
+        font-size:1.6rem;
+    }
+    .progress{
+        margin-right:1rem;
+        margin-bottom:0.5rem;
+        .determinate{
+          background-color:rgb(180, 241, 14); 
+            border-radius: 20px;
+            height:10px;
+            width: 0%;
+            margin: 0 0.6rem 0 0.6rem;
+        }
+    }
+   
+}
+.editDesc{
+    font-weight: bold;
+    color: rgba(211, 29, 35, 0.7);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top:-10%;
+    font-size:1.5rem;
+    border-bottom:1px solid black;
+}

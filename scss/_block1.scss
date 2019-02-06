@@ -1,0 +1,219 @@
+.block1 {
+  position: relative;
+  .favoriesStore {
+    div:nth-child(1) {
+      margin-top: 1rem;
+    }
+    div {
+      padding: 0 2rem 0 1.2rem;
+      position: relative;
+      li {
+        display: inline;
+
+        list-style: none;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+        &::after {
+          content: "";
+          margin-top: 0.3rem;
+          display: block;
+          width: 108%;
+          height: 2px;
+          background-color: #26a69a;
+          margin-bottom: 1.7rem;
+        }
+      }
+      .fa-times {
+        font-size: 1.6rem;
+        position: absolute;
+        bottom: 10%;
+        right: 3%;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .headBlock1 {
+    position: relative;
+    background-color: white;
+    height: 55.5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      &:nth-child(1) {
+        color: rgba(209, 7, 13, 0.7);
+      }
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: rgba(212, 104, 108, 0.7);
+      &:hover {
+        color: rgba(209, 7, 13, 0.7);
+      }
+    }
+
+    .favCounter {
+      top: 7%;
+      right: 2%;
+      position: absolute;
+      width: 1.4rem;
+      height: 1.4rem;
+      background-color: red;
+      border-radius: 50%;
+      .favCounterNumbers {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+    }
+
+    .moveUnderlineToLeft {
+      margin-top: 0.2rem;
+      display: block;
+      position: absolute;
+      left: 23%;
+      top: 2.8rem;
+      transform: translateX(-50%);
+      width: 37%;
+      border-radius: 60px;
+      height: 2px;
+      background-color: rgba(214, 87, 91, 0.7);
+      transition: all 0.5s;
+    }
+    .moveUnderlineToRight {
+      margin-top: 0.2rem;
+      display: block;
+      position: absolute;
+      left: 73%;
+      top: 2.8rem;
+      transform: translateX(-50%);
+      width: 45%;
+      border-radius: 60px;
+      height: 2px;
+      background-color: rgba(214, 87, 91, 0.7);
+      transition: all 0.5s;
+    }
+  }
+
+  #findFoodsToShow {
+    .search__field {
+      margin-left: 1rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+      width: 92%;
+      font-size: 1.3rem;
+      height: 2rem;
+      color: rgb(0, 0, 0);
+      border: 1px solid rgb(170, 170, 170);
+      border-left: 0 none;
+      border-right: 0 none;
+      border-top: 0 none;
+      background-color: rgba(255, 255, 255, 0);
+      outline: none;
+      transition: border-bottom;
+      &:focus {
+        border-bottom: 2px solid #2ba87f;
+      }
+      &::placeholder {
+        color: rgb(255, 255, 255);
+        opacity: 0.4;
+      }
+    }
+    .spinner {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .results__list {
+      height: 23.2rem;
+      li {
+        padding: 0.3rem 0 0.3rem 0.2rem;
+        cursor: pointer;
+        list-style: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+      li:nth-child(even) {
+        background: #2ba87f;
+      }
+
+      li:nth-child(odd) {
+        background: #377952;
+      }
+    }
+  }
+  .currentChoosenFood {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(90, 158, 76);
+    height: 7rem;
+    .addFoodCountainer {
+      li {
+        color: white;
+        padding: 0.6rem 1rem 0.4rem;
+        list-style: none;
+      }
+    }
+    .numberCalculateInput {
+      font-size: 1.1rem;
+
+      text-align: center;
+      outline: none;
+      position: absolute;
+      left: 14rem;
+      top: 2.9rem;
+      width: 4rem;
+      height: 1.5rem;
+      background-color: transparent;
+      border: 2px solid rgb(0, 0, 0);
+      border-left: 0 none;
+      border-right: 0 none;
+      border-top: 0 none;
+      font-weight: bold;
+    }
+    .gr {
+      position: absolute;
+      left: 18rem;
+      top: 3rem;
+      width: 4rem;
+    }
+    #transportButton {
+      position: absolute;
+      height: 2.5rem;
+      left: 22rem;
+      top: 2.2rem;
+      width: 5rem;
+    }
+  }
+}
+
+.errNoFood,
+.errDifferentFood {
+  text-align: center;
+  color: red;
+  margin-top: 1rem;
+  display: none;
+  font-size: 1.1rem;
+}
+.errDifferentFood {
+  margin-top: 0.4rem;
+}
+
+.errNoInput {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
